@@ -26,14 +26,29 @@ public class Bai4 {
 	            diem[i] = scanner.nextDouble();
 	        }
 		System.out.print("\nThong tin cua sinh vien:\n");
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < n; ++i) {
            
         	   System.out.println("Sinh vien " + (i + 1) + ":");
                System.out.println("Ho ten: " + hoTen[i]);
                System.out.println("Điem: " + diem[i]);
-               System.out.println("Hoc luc: " + hocLuc(diem[i+1]));
+               System.out.println("Hoc luc: " + hocLuc(diem[i]));
                System.out.println();
         }
+		System.out.print("\nThong tin cua sinh vien sau khi sap xep:\n");
+		double min = diem[0];
+		
+		for (int i = 1; i < n+1; ++i) {
+			
+	           if(min<diem[i]){
+	        System.out.println("Sinh vien " + (i + 1) + ":");
+            System.out.println("Ho ten: " + hoTen[i-1]);
+            System.out.println("Điem: " + diem[i-1]);
+            System.out.println("Hoc luc: " + hocLuc(diem[i-1]));
+            System.out.println();
+            min = diem[i];
+   
+	        }     
+		}
 		
 	}
 	private static String hocLuc(double diem) {
