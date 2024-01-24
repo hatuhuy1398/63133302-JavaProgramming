@@ -84,21 +84,23 @@ public class Bai2 {
 	}
 	static void xoa(ArrayList<String> listName, Scanner scanner) {
 		System.out.print("Nhap vao ten can xoa: ");
-        String hoTenCanXoa = scanner.nextLine();
-        boolean found = false;
+	    String hoTenCanXoa = scanner.nextLine();
+	    Iterator<String> iterator = listName.iterator();
+	    boolean found = false;
 
-        for (String hoTen : listName ) {
-            if (hoTen.equals(hoTenCanXoa)) {
-                listName.remove(hoTen);
-                found = true;
-                System.out.println("xoa thanh cong");
-                break;
-            }
-        }
+	    while (iterator.hasNext()) {
+	        String hoTen = iterator.next();
+	        if (hoTen.equals(hoTenCanXoa)) {
+	            iterator.remove();
+	            found = true;
+	            System.out.println("Xoa thanh cong");
+	            break;
+	        }
+	    }
 
-        if (found) {
-            System.out.println("Khong tim thay ten can xoa trong danh sach!!");
-        }
+	    if (!found) {
+	        System.out.println("Khong tim thay ten can xoa trong danh sach!!");
+	    }
 	}
 
 }
