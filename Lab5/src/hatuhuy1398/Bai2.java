@@ -52,15 +52,16 @@ public class Bai2 {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Nhap vao ten can xoa: ");
 	    String hoTenCanXoa = scanner.nextLine();
-	    Iterator<String> iterator = listName.iterator();
+	    
 	    boolean found = false;
 
-	    while (iterator.hasNext()) {
-	        String hoTen = iterator.next();
-	        if (hoTen.equals(hoTenCanXoa)) {
-	            iterator.remove();
+	    while (true) {
+	        
+	        if (listName.equals(hoTenCanXoa)) {
+	            listName.remove(hoTenCanXoa);
 	            found = true;
 	            System.out.println("Xoa thanh cong");
+	            
 	            break;
 	        }
 	    }
