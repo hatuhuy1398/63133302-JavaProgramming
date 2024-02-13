@@ -7,15 +7,15 @@ import java.util.*;
 public class Bai2 {
 	
 	private static void Menu() {
-		System.out.println("****************************************");
-		System.out.println("*************Chon chuc nang*************");
-		System.out.println("*************1.Nhap*********************");
-		System.out.println("*************3.Sap xep******************");
-		System.out.println("*************2.Xuat*********************");
-		System.out.println("*************4.Ngau nhien***************");
-		System.out.println("*************5.Xoa**********************");
-		System.out.println("***********6.Thoat chuong trinh*********");
-		System.out.println("****************************************");
+		 System.out.println("\t========================================");
+	        System.out.println("\t1. Nhập danh sách họ và tên");
+	        System.out.println("\t2. Xuất danh sách vừa nhập");
+	        System.out.println("\t3. Xuất danh sách ngẫu nhiên");
+	        System.out.println("\t4. Sắp xếp giảm dần và xuất danh sách");
+	        System.out.println("\t5. Tìm và xóa họ tên nhập từ bàn phím");
+	        System.out.println("\t6. Kết thúc");
+	        System.out.println("\t========================================");
+	        
 	}
 	private static void Nhap(ArrayList<String> listName) {
 		Scanner scanner = new Scanner(System.in);
