@@ -8,6 +8,7 @@ public class sanPham {
 	private String hang;
 	
 	public sanPham(String tenSp, double donGia, String hang) {
+		super();
 		this.tenSp = tenSp;
 		this.donGia = donGia;
 		this.hang = hang;
