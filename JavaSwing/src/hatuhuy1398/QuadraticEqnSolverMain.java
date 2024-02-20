@@ -20,7 +20,7 @@ public class QuadraticEqnSolverMain extends JFrame implements ActionListener {
 	private static final String STRX = "x +";
 	private static final String STREQUALSZERO = "= 0";
 	private static final String STRJBSOLVE = "GiaiPhuongTrinh!";
-	private static final String STRNOREALROOTS = "Khong co nghiem ";
+	private static final String STRNOREALROOTS = "Vo nghiem ";
 	private static final String STRINTREALROOTS = "Vo so co nghiem ";
 	private static final String STRANSWERPARTONE = "x1 = ";
 	private static final String STRANSWERPARTTWO = " va x2 = ";
@@ -181,8 +181,8 @@ public class QuadraticEqnSolverMain extends JFrame implements ActionListener {
                 double x2 = (-1 / (2 * a)) * (b - Math.cbrt(-1) * c / Math.cbrt(27 * a * a * a));
                 double x3 = (-1 / (2 * a)) * (b - Math.cbrt(-1) * c / Math.cbrt(27 * a * a * a));
                 String answer1= STRANSWERPARTONE+(x1);
-                String answer2= STRANSWERPARTTWO+(x2)+("+i")+(Math.sqrt(3) / 2) * Math.cbrt(27 * a * a * a);
-                String answer3= STRANSWERPARTTHREE+(x3)+("-i")+(Math.sqrt(3) / 2) * Math.cbrt(27 * a * a * a);
+                String answer2= STRANSWERPARTTWO+(x2)+("+")+(Math.sqrt(3) / 2) * Math.cbrt(27 * a * a * a)+("i");
+                String answer3= STRANSWERPARTTHREE+(x3)+("-")+(Math.sqrt(3) / 2) * Math.cbrt(27 * a * a * a)+("i");
                 jlSolution.setText(answer1 +answer2 +answer3);
                
             }
