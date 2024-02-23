@@ -94,7 +94,7 @@ public class sinhVien {
 	
 	private static boolean isValidSdt(String sdt) {
 		// TODO Auto-generated method stub
-		String regex = "0\\d{9.10}$";
+		String regex = "0\\d{9,10}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(sdt);
         return matcher.matches();
