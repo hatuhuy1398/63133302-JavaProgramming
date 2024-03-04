@@ -71,7 +71,7 @@ public class LoginFr extends JFrame {
 		String strUser = txtUser.getText();
 		String strPass = txtPass.getText();
 		
-		if (strUser.equals("63CNTT2") && strPass.equals("1398"))
+		if (strUser.equals("63CNTT") && strPass.equals("123"))
 		{
 			
 			new HomeFr().setVisible(true);
